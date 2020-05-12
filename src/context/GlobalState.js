@@ -1,12 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 import ExpenseReducer from './ExpenseReducer';
 const initialState = {
-	transactions: [
-		{ id: 1, text: 'Lizzo Tickets', amount: -50 },
-		{ id: 2, text: 'Stimulus Check', amount: 1200 },
-		{ id: 3, text: 'Udemy Course', amount: -12 },
-		{ id: 4, text: 'UberEats', amount: -15 }
-	]
+	transactions: []
 };
 
 export const GlobalContext = createContext(initialState);
